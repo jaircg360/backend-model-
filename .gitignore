@@ -1,0 +1,81 @@
+# === Python ===
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+*.pyc
+*$py.class
+
+# === Entornos virtuales ===
+.env
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+
+# === Archivos de configuración local ===
+*.env
+.env.*
+!.env.example
+
+# === Archivos de logs ===
+*.log
+logs/
+debug.log
+
+# === Archivos temporales / cache ===
+*.swp
+*.swo
+*.swn
+*.bak
+*.tmp
+*.temp
+.cache/
+.pytest_cache/
+migrations/
+instance/
+tmp/
+__pypackages__/
+.coverage
+coverage.xml
+htmlcov/
+
+# === Compilación / distribución ===
+build/
+dist/
+*.egg-info/
+*.egg
+.eggs/
+
+# === IDEs / Editores ===
+.vscode/
+.idea/
+*.iml
+
+# === Sistema Operativo ===
+.DS_Store
+Thumbs.db
+
+# === Docker ===
+# (Si usas contenedores o Compose)
+*.pid
+docker-compose.override.yml
+.env.docker
+.dockerignore
+**/__pycache__/
+
+# === Bases de datos locales ===
+*.sqlite3
+*.db
+*.sql
+
+# === FastAPI specific ===
+# Si usas Uvicorn o Gunicorn, evita logs y recompilaciones locales
+uvicorn.log
+gunicorn.log
+
+# === Test ===
+tests/__pycache__/
+tests/.pytest_cache/
